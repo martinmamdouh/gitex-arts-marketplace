@@ -926,3 +926,9 @@ a:focus {
   align-items: center;
   font-size: 15px;
 }
+
+.divider {
+  border-top: 0.5px solid black;
+  margin-bottom: 12px;
+  margin-top: 20px;
+}
