@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="images/favicon.jpeg" type="image/x-icon">
+
+  <title>Emirates NBD WEB 3 World</title>
+
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <img width="160" height="40" src="/images/Emirates-NBD-logo.jpg" alt="">
+          </a>
+          <!-- <span class="metamask">
+
+              <img width="40" height="40" src="/images/metamask.png" >
+              <span><b>Balance: </b>120 E-coin</span>
+            </span> -->
+
+        </nav>
+      </div>
+    </header>
+  <!-- <div class="divider"></div> -->
+<section >
+</section>
+<section >
+    <!-- client section -->
+ 
+    <div  class="container card">
+        <div  id="loadingDiv"  class="row">
+            <div class="col-sm-4 offset-4">
+                <div  class="loader"></div>
+                <div>Please wait while transferring the tokens to your wallet. </div>
+            </div>
+        </div> 
+        <div id="txtDiv" class="row txt">
+            <div class="col-sm-4 offset-4">
+                <h1 class="cong-txt">Congratulations!</h1>
+                <h3> The tokens are transferred to your wallet!</h3>
+            </div>
+        </div>
+    
+    </div>
+  </section>
+  <!-- end client section -->
+
+  <!-- footer section -->
+  <footer class="footer_section">
+      <div class="footer-info">
+        <p>
+          &copy; <span id="displayYear"></span> All Rights Reserved By
+          <a href="https://html.design/">Emirates NBD</a>
+        </p>
+      </div>
+  </footer>
+  <!-- footer section -->
+
+</body>
+<style>
+.card {
+
+    max-width: 100%;
+    height: 600px;
+    padding: 40px;
+    color:  #3b4a6b;;
+}
+.txt{
+    background-image: url("/images/congrats.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top:10%;
+    height: inherit;
+    width: 100%;
+}
+
+.metamask{
+    float:right
+}
+
+.divider{
+  border-top: 1px solid black;
+  margin-bottom:12px ;
+  margin-top:20px ;
+}
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3b4a6b; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  margin-left: 25%;
+  margin-top: 25%;
+}
+
+#txtDiv{
+    display: none;
+}
+.cong-txt{
+    color:rgb(238, 160, 58);
+}
+#loadingDiv{
+    display: block;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+</style>
+<script>
+    window.onload = () => {
+        setTimeout(() => {
+            var loading = document.getElementById("loadingDiv");
+            var txt = document.getElementById("txtDiv");
+            loading.style.display='none';
+            txt.style.display='block';
+        }, 4000);
+    }
+</script>
+</html>
