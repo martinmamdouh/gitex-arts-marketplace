@@ -57,15 +57,15 @@
  
     <div  class="container card">
         <div  id="loadingDiv"  class="row">
-            <div class="col-sm-4 offset-4">
+            <div class="col-8 offset-4">
                 <div  class="loader"></div>
                 <div>Please wait while transferring the tokens to your wallet. </div>
             </div>
         </div> 
-        <div id="txtDiv" class="row txt">
-            <div class="col-sm-4 offset-4">
-                <h1 class="cong-txt">Congratulations!</h1>
-                <h3> The tokens are transferred to your wallet!</h3>
+        <div id="txtDiv" class="row  align-content-center txt">
+            <div class="col-8 offset-4">
+                <h5 class="cong-txt nowrap">Congratulations!</h5>
+                <p> The tokens are transferred to your wallet!</p>
               </div>
         </div>
     
@@ -78,7 +78,7 @@
       <div class="footer-info">
         <p>
           &copy; <span id="displayYear"></span> All Rights Reserved By
-          <a href="https://html.design/">Emirates NBD</a>
+          <a href="index.html">Emirates NBD</a>
         </p>
       </div>
   </footer>
@@ -87,7 +87,6 @@
 </body>
 <style>
 .card {
-
     max-width: 100%;
     height: 600px;
     padding: 40px;
@@ -118,8 +117,6 @@
   width: 120px;
   height: 120px;
   animation: spin 2s linear infinite;
-  margin-left: 25%;
-  margin-top: 25%;
 }
 
 #txtDiv{
@@ -127,8 +124,10 @@
 }
 .cong-txt{
     color:rgb(238, 160, 58);
+    white-space: nowrap;
 }
 #loadingDiv{
+    margin-top: 10% ;
     display: block;
 }
 
