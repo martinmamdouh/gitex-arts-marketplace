@@ -66,7 +66,7 @@
             <div class="col-sm-4 offset-4">
                 <h1 class="cong-txt">Congratulations!</h1>
                 <h3> The tokens are transferred to your wallet!</h3>
-            </div>
+              </div>
         </div>
     
     </div>
@@ -144,7 +144,13 @@
             var txt = document.getElementById("txtDiv");
             loading.style.display='none';
             txt.style.display='block';
+            returnToHome();
         }, 4000);
+    }
+    function returnToHome(){
+      setTimeout(() => {
+        document.location='index.html';
+        }, 12000);
     }
 </script>
 </html>
