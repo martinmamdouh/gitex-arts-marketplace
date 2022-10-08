@@ -1,0 +1,134 @@
+<html>
+  <head>
+    <!-- <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,700,900&display=swap" rel="stylesheet"> -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Site Metas -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="shortcut icon" href="images/favicon.jpeg" type="image/x-icon">
+  
+    <title>Emirates NBD</title>
+  
+  
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <!--owl slider stylesheet -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  
+    <!-- font awesome style -->
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+  
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="css/responsive.css" rel="stylesheet" />
+</head>
+    <style>
+      body {
+        text-align: center;
+        font-family: "Poppins", sans-serif;
+        /* padding: 40px 0; */
+        /* background: #EBF0F5; */
+      }
+        h1 {
+          color: rgb(238, 160, 58);
+          /* font-family: "Nunito Sans", "Helvetica Neue", sans-serif; */
+          font-weight: 900;
+          font-size: 40px;
+          margin-bottom: 10px;
+        }
+        p {
+          color: white;
+          /* font-family: "Nunito Sans", "Helvetica Neue", sans-serif; */
+          font-size:20px;
+          margin: 0;
+        }
+      i {
+        color: rgb(238, 160, 58);
+        font-size: 100px;
+        line-height: 200px;
+        margin-left:-15px;
+      }
+      .card {
+        background: #3b4a6b;
+        padding: 60px;
+        border-radius: 4px;
+        box-shadow: 0 2px 3px #C8D0D8;
+        display: inline-block;
+        margin: 0 auto;
+        width: 60%;
+        height: 60%;
+      }
+      .loader{
+          margin-top: 15px;
+          width: 160px;
+          height: 160px;
+          color:rgb(238, 160, 58);
+      }
+
+    </style>
+    <body>
+        <header class="header_section">
+            <div class="container-fluid">
+              <nav class="navbar custom_nav-container ">
+                <a class="navbar-brand" href="index.html">
+                  <img width="160" height="40" src="images/emiratesnbdlogo.jpg" alt="">
+                </a>
+                <!-- <span class="metamask">
+      
+                    <img width="40" height="40" src="/images/metamask.png" >
+                    <span><b>Available Balance: </b>120 E-coin</span>
+                  </span> -->
+      
+              </nav>
+            </div>
+          </header>
+          <div class="divider"></div>
+          <div class="card"  style="display: block;" id="loadingDiv">
+            <div style="border-radius:200px; height:200px; width:200px; background: #F8FAF5; margin:40px auto;">
+              <section style="display: block;" id="loadingDiv">
+                <div class="spinner-border loader" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <p style=" margin-top:40px;color: white;">Please Wait ...</p>
+              </section>
+          </div>
+        </div>
+        <div id="txtDiv" style="display: none;" class="card">
+          <div style="border-radius:200px; height:200px; width:200px; background: #F8FAF5; margin:40px auto;">
+            <section >
+                <i class="checkmark">✓</i>
+                </div>
+                <h1>Purchase Successful</h1> 
+                <p>Tokens are credited to your account!</p>
+            </section>
+        </div>
+    </div>
+    <footer class="footer_section" style="position: fixed; bottom: 0%; width: 100%;">
+          <p>
+                    
+          </p>
+        
+  </footer>
+    </body>
+    <script>
+        window.onload = () => {
+            setTimeout(() => {
+                var loading = document.getElementById("loadingDiv");
+                var txt = document.getElementById("txtDiv");
+                loading.style.display='none';
+                txt.style.display='block';
+                returnToHome();
+            }, 4000);
+        }
+        function returnToHome(){
+          setTimeout(() => {
+            document.location='index.html';
+            }, 12000);
+        }
+    </script>
+</html>
